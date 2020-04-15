@@ -1,0 +1,3 @@
+ini aku udah install visual studio code, xampp ama chrome.
+kalo materi phpnya gua baru pelajarin syntax php di malasngoding.com
+kedepannya bakal nerusin pelajarin syntax php lagi di chapter selanjutnya.

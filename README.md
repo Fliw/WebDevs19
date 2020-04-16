@@ -2,4 +2,4 @@
 - isi tugas kalian di folder tugas masing masing
 - isi project kalian di folder project masing masing
 - askldaskld
-asdasdsa
+asdasdsaaaaaaa

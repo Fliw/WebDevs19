@@ -2,8 +2,8 @@
 - Isi tugas kalian di folder tugas masing masing.
 - Isi project kalian di folder project masing masing.
 ## Deadline
-- Deadline Frontend : 7 April 2020.
-- Deadline Backend : 6 April 2020.
+- Deadline Frontend : 7 Mei 2020.
+- Deadline Backend : 6 Mei 2020.
 ## Material Frontend
 - Week 1 : Introduce HTML, Element, Attributes,Value,Heading,Paragraph.
 - Week 2 : Introduce Inline CSS,text Format,Comment,Anchor (Link).

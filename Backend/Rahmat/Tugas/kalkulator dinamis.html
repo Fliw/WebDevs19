@@ -1,0 +1,51 @@
+><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Dinamis</title>
+    <style type="text/css">
+    body {
+    background-color: fuchsia;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 30px;
+        font-family: Arial;
+    }
+
+    label{
+        text-align: center;
+        font-size: 15px;
+        font-family: Arial;
+    }
+    </style>
+</head>
+<body>
+    <h1>kalkulator Bapak Kau</h1>
+    <form action="kalkulator dinamis.php" method="GET">
+        
+            <label>Masukkan Angka Pertama</label>
+            <br>
+            <input type="number" name="angka1">
+            <br>       
+            <label>Masukkan Angka Kedua</label>
+            <br>
+            <input type="number" name="angka2">
+            <br>
+        
+        <label>Pilih Operasi Yang Diinginkan</label>
+        <br>
+        <select  name="pil">
+            <option value="plus">Plus (+)</option>
+            <option value="minus">Minus (-)</option>
+            <option value="kali">Kali (*)</option>
+            <option value="bagi">Bagi (/)</option>
+        </select>
+        <input type="submit" value="Hitung !!!">
+    
+    </form>
+
+</body>
+</html>

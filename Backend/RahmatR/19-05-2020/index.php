@@ -43,7 +43,6 @@ if (isset($_POST['submit'])) {
     $fileName = 'log.txt';
     if (!file_exists($fileName)) {
         $handle = fopen($fileName, 'w') or die('Cannot create file:  ' . $fileName);
-        var_dump(file_exists($fileName));
         fwrite($handle, '');
     }
 

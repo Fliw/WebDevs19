@@ -41,18 +41,15 @@ if (isset($_POST['submit'])) {
 
     // file log name and create it
     $fileName = 'log.txt';
-    if (!file_exists($fileName)) {
-        $handle = fopen($fileName, 'w') or die('Cannot create file:  ' . $fileName);
-        fwrite($handle, '');
-    }
+    $handle = fopen($fileName, 'a') or die('Cannot create file:  ' . $fileName);
 
     if (loginCheck($uName, $pass)) {
-        $handle = fopen($fileName, 'a') or die('Cannot open file:  ' . $fileName);
         $logMsg = "[" . date("d-m-Y") . " - " . date("h:i:sa") . "] " .
-            "$uName has successfully logged in" . PHP_EOL;
+                  "$uName has successfully logged in" . PHP_EOL;
 
         // append write log msg
         fwrite($handle, $logMsg);
+        fclose($handle);
 
         header('location: result.php?status=success');
         die();

@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <title>Hai sayang</title>
+    </head>
     <body>
         <?php
         session_start();

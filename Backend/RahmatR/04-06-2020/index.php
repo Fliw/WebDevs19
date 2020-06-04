@@ -39,23 +39,20 @@ if (isset($_POST["submit"])) {
     $uName = $_POST["username"];
     $pass = $_POST["password"];
 
-    // file log name and create it
+    // handle file log
     $fileName = "log.txt";
-    if (!file_exists($fileName)) {
-        $handle = fopen($fileName, "w") or die("Cannot create file:  " . $fileName);
-        fwrite($handle, "");
-    }
+    $handle = fopen($fileName, "a") or die("Cannot create file:  " . $fileName);
 
     $login_status = loginCheck($uName, $pass);
 
     switch ($login_status) {
         case "logged":
-            $handle = fopen($fileName, "a") or die("Cannot open file:  " . $fileName);
             $logMsg = "[" . date("d-m-Y") . " - " . date("h:i:sa") . "] " .
-                "$uName has successfully logged in" . PHP_EOL;
+                      "$uName has successfully logged in" . PHP_EOL;
 
             // append write log msg
             fwrite($handle, $logMsg);
+            fclose($handle);
 
             // add to session
             $_SESSION["username"] = $uName;
@@ -117,5 +114,3 @@ function loginCheck($uName, $pass)
 
     return false;
 }
-
-

@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <title>Hai sayang</title>
+</head>
 <body>
     <h3>
         <?php
